@@ -7,7 +7,7 @@
             "metadata": {
                 "description": "The base URI where artifacts required by this template are located."
             },
-            "defaultValue": "https://raw.githubusercontent.com/Hardeights/RDS-Templates/master/wvd-templates/Create%20and%20provision%20WVD%20host%20pool/"
+            "defaultValue": "https://raw.githubusercontent.com/hardeights/RDS-Templates/master/wvd-templates/Create%20and%20provision%20WVD%20host%20pool/"
         },
         "_artifactsLocationSasToken": {
             "type": "securestring",
@@ -81,7 +81,7 @@
             "type": "string",
             "defaultValue": "",
             "metadata": {
-                "description": "Name of the Image Version - should follow <MajorVersion>.<MinorVersion>.<Patch>."
+                "description": "Name of the Image Version - should follow <MajorVersion>",".<MinorVersion>.<Patch>."
             }
         },    
         "rdshNamePrefix": {
