@@ -81,7 +81,7 @@
             "type": "string",
             "defaultValue": "",
             "metadata": {
-                "description": "Name of the Image Version - should follow <MajorVersion>",".<MinorVersion>.<Patch>."
+                "description": "Name of the Image Version - should follow MajorVersion.MinorVersion.Patch."
             }
         },    
         "rdshNamePrefix": {
