@@ -25,7 +25,8 @@
             "allowedValues": [
                 "CustomVHD",
                 "CustomImage",
-                "Gallery"
+                "Gallery",
+                "Azure Shared Image Gallery"
             ]
         },
         "vmImageVhdUri": {
