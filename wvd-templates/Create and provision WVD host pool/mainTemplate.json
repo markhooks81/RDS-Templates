@@ -62,6 +62,27 @@
                 "description": "(Required when rdshImageSource = CustomImage) Resource group name for the managed disk, if you choose to provide one."
             }
         },
+        "rdshsharedImagegalleryName": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "Name of the shared image gallery."
+            }
+        },
+        "rdshsharedImagedefinitionName": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "Name of the image definition."
+            }
+        },
+        "rdshsharedImageversion": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "Name of the Image Version - should follow <MajorVersion>.<MinorVersion>.<Patch>."
+            }
+        },    
         "rdshNamePrefix": {
             "type": "string",
             "metadata": {
