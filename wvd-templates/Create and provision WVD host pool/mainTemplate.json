@@ -338,6 +338,15 @@
                     "rdshGalleryImageSKU": {
                         "value": "[parameters('rdshGalleryImageSKU')]"
                     },
+                    "rdshsharedimagegalleryName": {
+                        "value": "[parameters('rdshsharedimagegalleryName')]"
+                    },
+                    "rdshsharedimagedefinitionName": {
+                        "value": "[parameters('rdshsharedimagedefinitionName')]"
+                    },
+                    "rdshsharedimageversion": {
+                        "value": "[parameters('rdshsharedimageversion')]"
+                    },
                     "rdshPrefix": {
                         "value": "[variables('rdshPrefix')]"
                     },
