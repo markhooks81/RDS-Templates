@@ -338,6 +338,10 @@
 									"label": "Gallery",
 									"value": "Gallery"
 								}
+                                {
+									"label": "Azure Shared Image Gallery",
+									"value": "ASIGallery"
+								}
 							]
 						},
 						"visible": true
@@ -377,7 +381,37 @@
 							"validationMessage": "The resource group name for the managed image may containl only alphanumeric characters, periods, underscores, hyphens and parenthesis and cannot end in a period."
 						},
 						"visible": "[equals(steps('virtualMachineSettings').vmImageType, 'CustomImage')]"
-					},
+                    },
+                    {
+						"name": "rdshsharedImagegalleryName",
+						"type": "Microsoft.Common.TextBox",
+						"label": "Shared Image Gallery Name",
+						"toolTip": "Name of your Azure Shared Image Gallery",
+						"constraints": {
+							"required": false
+                        },
+                        "visible": "[equals(steps('virtualMachineSettings').vmImageType, 'ASIGallery')]"
+                    },
+                    {
+						"name": "rdshsharedImagedefinitionName",
+						"type": "Microsoft.Common.TextBox",
+						"label": "Shared Image Definition Name",
+						"toolTip": "Name of your Azure Shared Image Definition",
+						"constraints": {
+							"required": false
+                        },
+                        "visible": "[equals(steps('virtualMachineSettings').vmImageType, 'ASIGallery')]"
+                    },
+                    {
+						"name": "rdshsharedImageversion",
+						"type": "Microsoft.Common.TextBox",
+						"label": "Shared Image Version Number 1.0.0",
+						"toolTip": "Version numner of your shared image",
+						"constraints": {
+							"required": false
+                        },
+                        "visible": "[equals(steps('virtualMachineSettings').vmImageType, 'ASIGallery')]"
+                    },
 					{
 						"name": "rdshCustomImageWarning",
 						"type": "Microsoft.Common.InfoBox",
@@ -700,8 +734,11 @@
 			}
 		],
 		"outputs": {
-			"rdshImageSource": "[steps('virtualMachineSettings').vmImageType]",
-			"vmImageVhdUri": "[coalesce(steps('virtualMachineSettings').imageURI, '')]",
+            "rdshImageSource": "[steps('virtualMachineSettings').vmImageType]",
+            "rdshsharedImagegalleryName": "[steps('virtualMachineSettings').vmImageType]",
+            "rdshsharedImagedefinitionName": "[steps('virtualMachineSettings').vmImageType]",
+            "rdshsharedImageversion": "[steps('virtualMachineSettings').vmImageType]",
+            "vmImageVhdUri": "[coalesce(steps('virtualMachineSettings').imageURI, '')]",
 			"rdshGalleryImageSKU": "[steps('virtualMachineSettings').galleryImageSelection]",
 			"rdshCustomImageSourceName": "[coalesce(steps('virtualMachineSettings').rdshCustomImageSourceName, '')]",
 			"rdshCustomImageSourceResourceGroup": "[coalesce(steps('virtualMachineSettings').rdshCustomImageSourceResourceGroup, '')]",
