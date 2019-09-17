@@ -63,21 +63,21 @@
                 "description": "(Required when rdshImageSource = CustomImage) Resource group name for the managed disk, if you choose to provide one."
             }
         },
-        "rdshsharedImagegalleryName": {
+        "sharedimagegalleryname": {
             "type": "string",
             "defaultValue": "",
             "metadata": {
                 "description": "Name of the shared image gallery."
             }
         },
-        "rdshsharedImagedefinitionName": {
+        "sharedimagedefname": {
             "type": "string",
             "defaultValue": "",
             "metadata": {
                 "description": "Name of the image definition."
             }
         },
-        "rdshsharedImageversion": {
+        "sharedImageversion": {
             "type": "string",
             "defaultValue": "",
             "metadata": {
@@ -338,14 +338,14 @@
                     "rdshGalleryImageSKU": {
                         "value": "[parameters('rdshGalleryImageSKU')]"
                     },
-                    "rdshsharedimagegalleryName": {
-                        "value": "[parameters('rdshsharedimagegalleryName')]"
+                    "sharedimagegalleryname": {
+                        "value": "[parameters('sharedimagegalleryname')]"
                     },
                     "rdshsharedimagedefinitionName": {
-                        "value": "[parameters('rdshsharedimagedefinitionName')]"
+                        "value": "[parameters('sharedimagedefname')]"
                     },
                     "rdshsharedimageversion": {
-                        "value": "[parameters('rdshsharedimageversion')]"
+                        "value": "[parameters('sharedImageversion')]"
                     },
                     "rdshPrefix": {
                         "value": "[variables('rdshPrefix')]"
