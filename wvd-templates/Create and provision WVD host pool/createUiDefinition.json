@@ -362,7 +362,7 @@
 						"name": "rdshCustomImageSourceName",
 						"type": "Microsoft.Common.TextBox",
 						"label": "Image name",
-						"toolTip": "Enter the name of the Azure managed image to be used as the source OS for the virtual machines.",
+						"toolTip": "Enter the name of the Azure managed image to be used as the source OS for the virtual machines or the VM Name for using Azure Shared Image Gallery Option.",
 						"constraints": {
 							"required": true,
 							"regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]*$",
@@ -383,17 +383,17 @@
 						"visible": "[equals(steps('virtualMachineSettings').vmImageType, 'CustomImage')]"
                     },
                     {
-						"name": "rdshsharedImagegalleryName",
+						"name": "sharedimagegalleryname",
 						"type": "Microsoft.Common.TextBox",
 						"label": "Shared Image Gallery Name",
-						"toolTip": "Name of your Azure Shared Image Gallery",
+						"toolTip": "Name of your Azure Shared Image Gallery, make sure to fill in server name you want in the field above for custom image source name",
 						"constraints": {
 							"required": false
                         },
                         "visible": "[equals(steps('virtualMachineSettings').vmImageType, 'ASIGallery')]"
                     },
                     {
-						"name": "rdshsharedImagedefinitionName",
+						"name": "sharedimagedefname",
 						"type": "Microsoft.Common.TextBox",
 						"label": "Shared Image Definition Name",
 						"toolTip": "Name of your Azure Shared Image Definition",
@@ -403,7 +403,7 @@
                         "visible": "[equals(steps('virtualMachineSettings').vmImageType, 'ASIGallery')]"
                     },
                     {
-						"name": "rdshsharedImageversion",
+						"name": "sharedImageversion",
 						"type": "Microsoft.Common.TextBox",
 						"label": "Shared Image Version Number 1.0.0",
 						"toolTip": "Version numner of your shared image",
@@ -735,9 +735,9 @@
 		],
 		"outputs": {
             "rdshImageSource": "[steps('virtualMachineSettings').vmImageType]",
-            "rdshsharedImagegalleryName": "[steps('virtualMachineSettings').vmImageType]",
-            "rdshsharedImagedefinitionName": "[steps('virtualMachineSettings').vmImageType]",
-            "rdshsharedImageversion": "[steps('virtualMachineSettings').vmImageType]",
+            "sharedimagegalleryname": "[steps('virtualMachineSettings').vmImageType]",
+            "sharedimagedefname": "[steps('virtualMachineSettings').vmImageType]",
+            "sharedImageversion": "[steps('virtualMachineSettings').vmImageType]",
             "vmImageVhdUri": "[coalesce(steps('virtualMachineSettings').imageURI, '')]",
 			"rdshGalleryImageSKU": "[steps('virtualMachineSettings').galleryImageSelection]",
 			"rdshCustomImageSourceName": "[coalesce(steps('virtualMachineSettings').rdshCustomImageSourceName, '')]",
