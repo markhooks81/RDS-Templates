@@ -341,10 +341,10 @@
                     "sharedimagegalleryname": {
                         "value": "[parameters('sharedimagegalleryname')]"
                     },
-                    "rdshsharedimagedefinitionName": {
+                    "sharedimagedefname": {
                         "value": "[parameters('sharedimagedefname')]"
                     },
-                    "rdshsharedimageversion": {
+                    "sharedImageversion": {
                         "value": "[parameters('sharedImageversion')]"
                     },
                     "rdshPrefix": {
