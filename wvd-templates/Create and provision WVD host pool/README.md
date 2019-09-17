@@ -23,6 +23,7 @@ When creating the virtual machines, you have three options:
 - Azure Gallery image
 - Custom VHD from blob storage
 - Custom Azure Image resource from a resource group
+- Azure Shared Image Gallery (new)
 
 Enter the appropriate parameters depending on the image option you choose.
 
@@ -30,6 +31,20 @@ Enter the appropriate parameters depending on the image option you choose.
 By selecting Azure Gallery, you can select up-to-date images provided by Microsoft and other publishers. Enter or select values for the following parameters:
 - **Rdsh Image Source**, select **Gallery**.
 - **Rdsh Gallery Image SKU**
+
+Ignore the following parameters :
+- **Vm Image Vhd Uri**
+- **Rdsh Custom Image Source Name**
+- **Rdsh Custom Image Source Resource Group**
+- **Rdsh Use Managed Disks**
+- **Storage Account Resource Group Name**
+
+### Azure Shared Image Gallery
+By selecting Azure Shared Image Gallery, you can select up-to-date versioned images you have created. Enter or select values for the following parameters:
+- **sharedimagegalleryname**
+- **sharedimagedefname**
+- **sharedImageversion**
+- **RDSH Name Prefix** => This is the server name you wish to use, remove pre-filled content
 
 Ignore the following parameters :
 - **Vm Image Vhd Uri**
