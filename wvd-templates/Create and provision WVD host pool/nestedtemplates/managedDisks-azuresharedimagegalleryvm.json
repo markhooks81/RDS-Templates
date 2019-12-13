@@ -148,7 +148,7 @@
         }
     },
     "variables": {
-        "imageResourceId": "[resourceId(parameters('sharedImagesubscription'), parameters('sharedImageresourcegroup', 'Microsoft.Compute/galleries/images/versions', parameters('sharedimagegalleryname'), parameters('sharedimagedefname'), parameters('sharedImageversion'))]",
+        "imageResourceId": "[resourceId(parameters('sharedImagesubscription'), parameters('sharedImageresourcegroup'), 'Microsoft.Compute/galleries/images/versions', parameters('sharedimagegalleryname'), parameters('sharedimagedefname'), parameters('sharedImageversion'))]",
         "storageAccountType": "[parameters('rdshVMDiskType')]",
         "availabilitySetId": {
             "id": "[if(equals(parameters('enablePersistentDesktop'),bool('False')),resourceId('Microsoft.Compute/availabilitySets/', concat(parameters('rdshPrefix'), 'availabilitySet')),json('null'))]"
@@ -209,7 +209,7 @@
                         }
                     },
                     "imageReference": {
-                        "id": "[resourceId(parameters('sharedimagegallerysubscription'), parameters('sharedimagegalleryresourcegroup', 'Microsoft.Compute/galleries/images/versions', parameters('sharedimagegalleryname'), parameters('sharedimagedefname'), parameters('sharedImageversion'))]"
+                        "id": "[resourceId(parameters('sharedimagegallerysubscription'), parameters('sharedimagegalleryresourcegroup'), 'Microsoft.Compute/galleries/images/versions', parameters('sharedimagegalleryname'), parameters('sharedimagedefname'), parameters('sharedImageversion'))]"
                     }
                 },
                 "networkProfile": {
