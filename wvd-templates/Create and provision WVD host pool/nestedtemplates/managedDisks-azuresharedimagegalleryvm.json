@@ -209,7 +209,7 @@
                         }
                     },
                     "imageReference": {
-                        "id": "[resourceId('cfbcc491-d4a2-4247-85a3-e0d6eca3d36a', 'WVD2-ResourceGroup-AIB', 'Microsoft.Compute/galleries/images/versions', parameters('sharedimagegalleryname'), parameters('sharedimagedefname'), parameters('sharedImageversion'))]"
+                        "id": "[variables('ImageResourceID')]"
                     }
                 },
                 "networkProfile": {
