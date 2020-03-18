@@ -287,6 +287,20 @@
                 "description": "(Required for Azure Marketplace.) Leave as is, unless you would like to not use a location that is different from the location of the resouce group."
             }
         }
+	"LAWorkspaceID": {
+            "defaultValue": "",
+            "type": "String",
+            "metadata": {
+                "description": "Log Analytics Workspace ID"
+            }
+        },
+	"LAWorkspaceKey": {
+            "defaultValue": "",
+            "type": "SecureString",
+            "metadata": {
+                "description": "Log Analytics Workspace Key"
+            }
+        }
     },
     "variables": {
         "rdshManagedDisks": "[if(equals(parameters('rdshImageSource'), 'CustomVHD'), parameters('rdshUseManagedDisks'), bool('true'))]",
