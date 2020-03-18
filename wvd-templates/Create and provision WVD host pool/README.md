@@ -7,6 +7,17 @@ Click the button below to deploy:
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
+<br>
+
+Click the button below to deploy Hostpool with Log Analytics Agent:
+
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmarkhooks81%2FRDS-Templates%2Fmaster%2Fwvd-templates%2FCreate%20and%20provision%20WVD%20host%20pool%2FmainTemplateLA.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fmarkhooks81%2FRDS-Templates%2Fmaster%2Fwvd-templates%2FCreate%20and%20provision%20WVD%20host%20pool%2FmainTemplateLA.json" target="_blank">
+    <img src="http://armviz.io/visualizebutton.png"/>
+</a>
+
 # Create and provision new Windows Virtual Desktop hostpool
 
 This template creates virtual machines and registers them as session hosts to a new or existing Windows Virtual Desktop host pool. There are multiple sets of parameters you must enter to successfully deploy the template:
