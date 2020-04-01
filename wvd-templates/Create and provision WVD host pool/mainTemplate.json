@@ -49,7 +49,6 @@
                 "description": "(Required when rdshImageSource = Gallery) Gallery image SKU."
             },
             "allowedValues": [
-                "allowedValues": [
                 "Windows-10-Enterprise-multi-session-with-Office-365-ProPlus",
                 "Windows-10-Enterprise-multi-session-with-Office-365-ProPlus-1909",
                 "Windows-10-Enterprise-multi-session-with-Office-365-ProPlus-1903",
