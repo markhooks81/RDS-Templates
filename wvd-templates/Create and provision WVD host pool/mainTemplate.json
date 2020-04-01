@@ -27,11 +27,11 @@
             "type": "string",
             "metadata": {
                 "description": "Select the image source for the session host vms. VMs from a Gallery image will be created with Managed Disks."
-            },
-            "defaultValue": "Azure Shared Image Gallery",
+            },            
             "allowedValues": [
                 "Azure Shared Image Gallery"
-            ]
+            ],
+            "defaultValue": "Azure Shared Image Gallery"
         },
         "vmImageVhdUri": {
             "type": "string",
