@@ -49,12 +49,20 @@
                 "description": "(Required when rdshImageSource = Gallery) Gallery image SKU."
             },
             "allowedValues": [
+                "allowedValues": [
                 "Windows-10-Enterprise-multi-session-with-Office-365-ProPlus",
+                "Windows-10-Enterprise-multi-session-with-Office-365-ProPlus-1909",
+                "Windows-10-Enterprise-multi-session-with-Office-365-ProPlus-1903",
                 "Windows-10-Enterprise-multi-session",
+                "Windows-10-Enterprise-multi-session-1909",
+                "Windows-10-Enterprise-multi-session-1903",
+                "Windows-10-Enterprise-Latest",
+                "Windows-10-Enterprise-1909",
                 "Windows-10-Enterprise-1903",
                 "2016-Datacenter"
             ],
             "defaultValue": "Windows-10-Enterprise-multi-session-with-Office-365-ProPlus"
+        },
         },
         "rdshCustomImageSourceName": {
             "type": "string",
