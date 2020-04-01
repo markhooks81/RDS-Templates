@@ -63,7 +63,6 @@
             ],
             "defaultValue": "Windows-10-Enterprise-multi-session-with-Office-365-ProPlus"
         },
-        },
         "rdshCustomImageSourceName": {
             "type": "string",
             "defaultValue": "",
