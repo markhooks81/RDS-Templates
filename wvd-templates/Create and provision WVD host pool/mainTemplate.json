@@ -30,9 +30,6 @@
             },
             "defaultValue": "Gallery",
             "allowedValues": [
-                "CustomVHD",
-                "CustomImage",
-                "Gallery",
                 "Azure Shared Image Gallery"
             ]
         },
