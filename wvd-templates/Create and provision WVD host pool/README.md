@@ -7,7 +7,7 @@ Click the button below to deploy:
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
-# ARM Template to Create and provision new Windows Virtual Desktop hostpool
+# ARM Template to Create and provision new Windows Virtual Desktop hostpool using Shared Image Galleries
 
 This template creates virtual machines and registers them as session hosts to a new or existing Windows Virtual Desktop host pool. There are multiple sets of parameters you must enter to successfully deploy the template:
 - VM image
