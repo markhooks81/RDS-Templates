@@ -381,37 +381,37 @@
 							"validationMessage": "The resource group name for the managed image may containl only alphanumeric characters, periods, underscores, hyphens and parenthesis and cannot end in a period."
 						},
 						"visible": "[equals(steps('virtualMachineSettings').vmImageType, 'CustomImage')]"
-                    },
-                    {
+                    			},
+                   			{
 						"name": "sharedimagegalleryname",
 						"type": "Microsoft.Common.TextBox",
 						"label": "Shared Image Gallery Name",
 						"toolTip": "Name of your Azure Shared Image Gallery, make sure to fill in server name you want in the field above for custom image source name",
 						"constraints": {
 							"required": false
-                        },
-                        "visible": "[equals(steps('virtualMachineSettings').vmImageType, 'ASIGallery')]"
-                    },
-                    {
+                       			},
+                        			"visible": "[equals(steps('virtualMachineSettings').vmImageType, 'ASIGallery')]"
+                    			},
+                    			{
 						"name": "sharedimagedefname",
 						"type": "Microsoft.Common.TextBox",
 						"label": "Shared Image Definition Name",
 						"toolTip": "Name of your Azure Shared Image Definition",
 						"constraints": {
 							"required": false
-                        },
-                        "visible": "[equals(steps('virtualMachineSettings').vmImageType, 'ASIGallery')]"
-                    },
-                    {
+                        		},
+                       				 "visible": "[equals(steps('virtualMachineSettings').vmImageType, 'ASIGallery')]"
+                    			},
+                    			{
 						"name": "sharedImageversion",
 						"type": "Microsoft.Common.TextBox",
 						"label": "Shared Image Version Number 1.0.0",
 						"toolTip": "Version numner of your shared image",
 						"constraints": {
 							"required": false
-                        },
-                        "visible": "[equals(steps('virtualMachineSettings').vmImageType, 'ASIGallery')]"
-                    },
+                       			 },
+                       				 "visible": "[equals(steps('virtualMachineSettings').vmImageType, 'ASIGallery')]"
+                   			 },
 					{
 						"name": "rdshCustomImageWarning",
 						"type": "Microsoft.Common.InfoBox",
