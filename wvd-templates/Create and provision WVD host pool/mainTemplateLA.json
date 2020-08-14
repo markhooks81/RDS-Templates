@@ -286,7 +286,7 @@
             "metadata": {
                 "description": "(Required for Azure Marketplace.) Leave as is, unless you would like to not use a location that is different from the location of the resouce group."
             }
-        }
+        },
 	"LAWorkspaceID": {
             "defaultValue": "",
             "type": "String",
